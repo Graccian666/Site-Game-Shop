@@ -1,0 +1,168 @@
+/*Resetando a página*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Aplicando fonte aos títulos*/
+header,
+section h2,
+section h3,
+form button{
+    font-family: 'Bungee', sans-serif;
+}
+
+/*Aplicando a fonte Roboto no resto da página, inclusive nos formulários e colocando a cor azul*/
+body,input,textarea{
+    font-family: 'Roboto', sans-serif;
+    color: #182C61;
+}
+
+/* Estilizando o cabeçalho com um espaçamento interno de 16px e alterando as cores de fundo e do texto */
+header {
+    padding: 16px 0;
+    background-color: #182C61;
+    color: #eaedee;
+}
+
+/*Estilizando os links do menu da página fazendo eles ficarem um do lado do outro com inline e colocando
+uma margem na esquerda dele */
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 32;
+}
+
+/*Alterando a cor do texto do link do menu e tirando o underline debaixo do link*/
+header nav li a{
+    color: #eaedee;
+    text-decoration: none;
+}
+
+/*Definindo o tamanho do cabeçalho*/
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*Fazendo menu e título ficarem lado a lado com display:flex, alinhando os itens com aling-itens
+e fazendo um item ficar em um lado da tela e outro em outro com justify content*/
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*O navegador adiciona automaticamente um peso para a fonte, temos que definir qual peso queremos no CSS*/
+header h1{
+    font-weight: normal;
+}
+
+/*Limitando o tamanho das imagens*/
+.brands-list img{
+    height: 24px;
+}
+
+/*Fazendo as imagens aparecerem uma ao lado da outra ao inves de quebrar por linha*/
+.brands-list li{
+    display: inline;
+    margin-right: 8px;
+}
+
+/*Fazendo a seção sobre a loja ficar lado a lado com a imagem da loja*/
+section .container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+
+/*Separando o h2 do cabeçalho, dando um espaçamento*/
+section h2{
+    margin-bottom: 16px;
+    color: #182C61;
+}
+
+/*Colocando um espaçamento entre os paragrafos*/
+section p{
+    margin-bottom: 8px;
+    color: #182C61;
+}
+
+/*Dando uma margem para separar a foto da loja */
+.store-front{
+    margin-right: 16px;
+    font-size: 48px;
+}
+
+/*Limitando a altura das imagens de redes sociais*/
+.social-links img{
+    height: 24px;
+}
+
+/*Fazendo as seções de contato terem um display em bloco, através do id da section*/
+#contact .container{
+    display: block;
+}
+
+/*Fazendo as sub-seções da seção contato ficarem lado a lado, e aplicando o espaçamento entre as seções*/
+.contact-methods{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Na subseção fale conosco fazendo as caixas de texto ficarem uma abaixo da outra, e terem 320 pixels de largura
+adicionando uma margem e um espaçamento entre os forms*/
+form input,
+form textarea,
+form button{
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+/*Tirando a opção de resize do text area, e alterando sua altura*/
+form textarea{
+    resize: none;
+    height: 180px;
+}
+
+/*Fazendo as logos das redes sociais ficarem lado a lado */
+.social-links li{
+    display: inline;
+    margin-right: 8px;
+}
+
+/*Removendo a decoração dos links das redes sociais*/
+.social-links li a{
+    text-decoration: none;
+}
+
+/*Fazendo o botão dos formulários ficar azul com o texto branco, removendo a borda, e trocando o cursor quando passar sobre ele*/
+form button{
+    background-color: #182C61;
+    color: #eaedee;
+    border: none;
+    cursor: pointer;
+    
+}
+
+/*Quando passar o mouse por cima a cor do botão muda*/
+form button:hover{
+    background-color: #405ba5;
+}
+
+/*Quando um formulário estiver selecionado trocar a cor da borda*/
+input:focus, textarea:focus{
+    outline-color: #182C61;
+}
+
+/*Colocando cores no radapé*/
+footer{
+    background-color: #182C61;
+    color: #eaedee;
+    padding: 16px 0;
+}
